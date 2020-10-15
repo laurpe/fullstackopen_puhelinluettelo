@@ -21,6 +21,7 @@ app.use(
 );
 
 app.use(cors());
+app.use(express.static("build"));
 
 let persons = [
   {
@@ -51,7 +52,7 @@ let persons = [
 ];
 
 app.get("/", (request, response) => {
-  response.send("<h1>hello world</h1>");
+  response.send("<h1>hello world <3333333</h1>");
 });
 
 app.get("/info", (request, response) => {
